@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>소확행공방</title>
+<meta name="description" content="일상을 밝히는 소소한 성취 — 작은 미션을 켤 때마다 네온이 들어오는 습관 앱, 소확행공방의 소개 · 개인정보처리방침 · 문의 페이지입니다.">
+<style>
+  :root {
+    --bg: #0A0912;
+    --card: #14121F;
+    --border: #2A2540;
+    --ink: #F4F0FF;
+    --ink-soft: #C9C2DE;
+    --ink-faint: #8C84A6;
+    --pink: #FF3EC8;
+    --cyan: #2EE6FF;
+    --purple: #A66BFF;
+    --green: #39FF9C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none;
+    background: radial-gradient(60% 40% at 50% 0%, rgba(166,107,255,.22), transparent 70%);
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; position: relative; }
+
+  header { padding: 60px 0 36px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+  header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 0 28px rgba(166,107,255,.45); }
+  .issue { font-size: 12px; letter-spacing: 3px; color: var(--ink-faint); }
+  h1 {
+    font-size: clamp(34px, 7vw, 48px); line-height: 1.1; margin: 2px 0 8px; font-weight: 700;
+    color: #FFD6F3;
+    text-shadow: 0 0 6px var(--pink), 0 0 18px var(--pink), 0 0 36px rgba(255,62,200,.5);
+  }
+  .tagline { color: var(--cyan); margin: 0; font-size: clamp(15px, 2.6vw, 18px); text-shadow: 0 0 10px rgba(46,230,255,.5); }
+
+  .rule { height: 1px; background: var(--border); border: 0; margin: 0; }
+  section { padding: 36px 0; }
+  h2 { font-size: 21px; margin: 0 0 4px; }
+  .section-note { color: var(--ink-faint); font-size: 13px; margin: 0 0 20px; }
+
+  .points { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; }
+  .points li {
+    background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--c, var(--pink));
+    border-radius: 14px; padding: 13px 16px; font-size: 14px; color: var(--ink-soft);
+  }
+  .points b { color: var(--ink); }
+
+  .policy { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 6px 20px 20px; }
+  .policy h3 { font-size: 15px; margin: 20px 0 6px; color: var(--ink); }
+  .policy p, .policy li { font-size: 14px; color: var(--ink-soft); }
+  .policy ul { padding-left: 18px; margin: 6px 0; }
+  .table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
+  .table th, .table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--ink-soft); }
+  .table th { color: var(--ink); font-weight: 600; }
+  .callout { background: #1C1830; border-radius: 12px; padding: 13px 16px; font-size: 13px; color: var(--ink-soft); margin-top: 16px; }
+
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .contact {
+    background: var(--card); border: 1.5px solid var(--purple); border-radius: 18px; padding: 24px;
+    box-shadow: 0 0 22px rgba(166,107,255,.25), inset 0 0 18px rgba(166,107,255,.08);
+  }
+  .contact p { color: var(--ink-soft); font-size: 14px; margin: 0 0 14px; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 999px; font-weight: 700; font-size: 15px;
+    color: #FFE6F7; border: 1.5px solid var(--pink); box-shadow: 0 0 14px rgba(255,62,200,.45);
+  }
+  .btn:hover { text-decoration: none; background: rgba(255,62,200,.12); }
+
+  footer { padding: 30px 0 46px; text-align: center; color: var(--ink-faint); font-size: 12px; }
+  .updated { opacity: .7; font-size: 11px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="소확행공방 앱 아이콘">
+    <div>
+      <div class="issue">SOHWAKHAENG GONGBANG</div>
+      <h1>소확행공방</h1>
+      <p class="tagline">일상을 밝히는 소소한 성취</p>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <section>
+    <h2>이런 앱이에요</h2>
+    <p class="section-note">물 한 잔, 스트레칭 5분 — 작은 미션을 켤 때마다 네온 불이 들어와요.</p>
+    <ul class="points">
+      <li style="--c: var(--pink)"><b>오늘의 미션.</b> 하루·주간·월간 미션을 켜고 끄며 연속 기록(D+)을 쌓아요.</li>
+      <li style="--c: var(--cyan)"><b>쉬어도 괜찮아요.</b> 휴가·명절·아픈 날은 쉬는 기간으로 등록하면 연속 기록이 끊기지 않아요.</li>
+      <li style="--c: var(--green)"><b>힐링 타임.</b> 슬라임 · 네온 고양이 · 모기사냥 · 비눗방울로 잠깐 스트레스를 풀어요.</li>
+      <li style="--c: var(--purple)"><b>나에게 주는 보상.</b> 미션으로 모은 젬으로 군것질 · 맥주 · 하루 풀어지기권 같은 쿠폰을 사요.</li>
+      <li style="--c: var(--pink)"><b>위젯과 잠금화면.</b> 홈 화면 위젯과 실시간 현황(Live Activity)으로 오늘 남은 미션을 바로 봐요.</li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section id="privacy">
+    <h2>개인정보처리방침</h2>
+    <p class="section-note">한 줄로 줄이면 — 모으는 개인정보가 없고, 모든 기록은 이용자의 기기 안에만 있습니다.</p>
+
+    <div class="policy">
+      <h3>수집하는 개인정보</h3>
+      <p>없습니다. 회원 가입 · 로그인 · 광고 · 분석 도구가 없고, 이름 · 연락처 · 위치 등 어떤 개인정보도 수집하지 않습니다.
+         앱은 인터넷에 접속하지 않으며, 개발자는 이용자의 기록을 받아 보거나 열람할 수 없습니다.</p>
+
+      <h3>기기에 저장되는 정보</h3>
+      <p>아래 기록은 이용자의 iPhone 안에만 저장됩니다. 홈 화면 위젯과 잠금화면 실시간 현황이 같은 기록을 보여 주도록 앱과 위젯이 함께 쓰는 기기 안 저장 공간(App Group)을 사용합니다.</p>
+      <ul>
+        <li>미션과 완료 기록, 연속 일수, 젬 · 쿠폰 · 방어권 · 배지</li>
+        <li>쉬는 기간, 즐겨찾기 미션, 카테고리</li>
+        <li>미니게임 기록</li>
+        <li>화면 · 색상 · 글꼴 · 소리 · 진동 · 알림 설정</li>
+      </ul>
+
+      <h3>기기 권한과 사용 목적</h3>
+      <table class="table">
+        <tr><th>권한</th><th>언제 묻나요</th><th>무엇에 쓰나요</th></tr>
+        <tr><td>알림</td><td>처음 앱 소개를 마친 뒤</td><td>정해 둔 시간에 미션 알림. 기기 안에서 예약하며 서버를 거치지 않습니다.</td></tr>
+        <tr><td>캘린더(전체 접근)</td><td>설정 &gt; 캘린더 연동을 켤 때</td><td>쉬는 기간을 ‘소확행공방’ 캘린더에 표시하고, 휴가 · 여행 같은 일정을 읽어 쉬는 기간으로 가져옵니다. 일정 내용은 기기 밖으로 보내지 않습니다.</td></tr>
+        <tr><td>마이크</td><td>비눗방울 게임에서 ‘후~’를 켤 때</td><td>부는 소리의 크기만 실시간으로 잽니다. 녹음 파일을 만들거나 저장 · 전송하지 않습니다.</td></tr>
+      </table>
+      <p>이용자의 캘린더가 iCloud나 Google 계정과 연결되어 있다면, 앱이 만든 ‘소확행공방’ 캘린더 일정은 그 계정의 동기화 방식에 따라 다른 기기에도 보일 수 있습니다. 이 동기화는 Apple · Google이 각자의 방침에 따라 처리합니다.</p>
+
+      <h3>백업 파일</h3>
+      <p>설정 &gt; 데이터 &gt; 백업 파일 만들기를 누르면 기록이 파일(JSON)로 만들어지고, 저장하거나 공유할 곳은 이용자가 직접 고릅니다. 앱은 이 파일을 어디로도 보내지 않습니다.</p>
+
+      <h3>제3자 제공</h3>
+      <p>수집하는 정보가 없으므로 제3자에게 제공하는 정보도 없습니다.</p>
+
+      <h3>보관과 삭제</h3>
+      <p>기록은 앱을 삭제하거나 설정 &gt; 데이터 &gt; 모든 기록 지우기를 하면 기기에서 지워집니다.
+         캘린더에 만든 ‘소확행공방’ 일정은 캘린더 연동을 끄거나 모든 기록을 지우면 함께 지워집니다.</p>
+
+      <h3>아동의 개인정보</h3>
+      <p>수집하는 개인정보가 없으므로 연령과 무관하게 이용할 수 있습니다.</p>
+
+      <div class="callout">
+        이 방침이 바뀌면 이 페이지를 먼저 고치고 앱 업데이트 안내로 알립니다.
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="contact">
+    <div class="contact">
+      <h2>문의</h2>
+      <p>오류 제보, 기능 제안, 그 밖의 문의를 받습니다.<br>
+         아래에서 새 글을 남겨 주시면 확인합니다. GitHub 계정이 필요합니다.</p>
+      <a class="btn" href="https://github.com/allenst486de/sohwakhaeng/issues/new" target="_blank" rel="noopener">문의 남기기 ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    소확행공방 · 대한민국 App Store<br>
+    <span class="updated">시행일 2026년 10월 11일</span>
+  </footer>
+
+</div>
+</body>
+</html>
