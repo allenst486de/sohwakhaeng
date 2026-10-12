@@ -1,11 +1,10 @@
 # 소확행공방 — 지원 페이지
 
-낱말퍼즐 매거진(`allenst486de/natmalpuzzle`)과 같은 방식: GitHub Pages 한 장 + GitHub Issues 문의.
+iOS 습관 앱 **소확행공방**의 소개 · 개인정보처리방침 · 문의 페이지입니다.
 
-- 공개 주소(예정): https://allenst486de.github.io/sohwakhaeng/
-- 개인정보처리방침 URL: https://allenst486de.github.io/sohwakhaeng/#privacy
-- 지원 URL: https://allenst486de.github.io/sohwakhaeng/
-- 문의: https://github.com/allenst486de/sohwakhaeng/issues/new
-- 앱 설정 > 정보의 '개인정보처리방침'·'문의하기'가 위 주소를 연다
+- 공개 주소: https://allenst486de.github.io/sohwakhaeng/
+- 용도
+  - App Store 지원 URL
+  - App Store 개인정보처리방침 URL
 
-파일: `index.html`, `icon.png` (빌드 과정 없음)
+페이지는 `index.html` 한 장으로 끝나며 빌드 과정이 없습니다.
